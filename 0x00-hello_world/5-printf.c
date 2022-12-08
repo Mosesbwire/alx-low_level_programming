@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-/*
-   * main - entry point
-   *
-   *Return: 0 (success)
-   */
+/**
+  *main -Entry point
+  *Prints a string to stdout using printf
+  *
+  *Return: Alaways 0 (success)
+  *
+  */
 
 int main(void)
 {

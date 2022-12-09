@@ -23,7 +23,7 @@ int main(void)
 		{
 			if (i != j && i < j)
 			{
-				if ((i == 0 && j != 1) || i != 0 )
+				if ((i == 0 && j != 1) || i != 0)
 				{
 					putchar(',');
 					putchar(' ');

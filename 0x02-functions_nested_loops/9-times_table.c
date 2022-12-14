@@ -22,7 +22,6 @@ void times_table(void)
 			if (y != 0)
 			{
 				_putchar(',');
-				_putchar(' ');
 			}
 
 			if (ans >= z)
@@ -30,14 +29,23 @@ void times_table(void)
 				int q = ans / 10;
 				int r = ans % 10;
 
+				_putchar(' ');
 				_putchar(q + '0');
 				_putchar(r + '0');
-			} else
+			}
+			if (ans < z && y != 0)
 			{
 				_putchar(' ');
+				_putchar(' ');
 				_putchar(ans + '0');
-
+			} else if (y == 0)
+			{
+				_putchar(ans + '0');
 			}
+			
+
+				
+			
 
 		}
 

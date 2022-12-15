@@ -9,13 +9,13 @@ void more_numbers(void)
 {
 	int outer_start;
 	int inner_start;
-	int outer_bound = 11;
+	int outer_bound = 10;
 	int inner_bound = 15;
 	int remainder;
 
 	for (outer_start = 0; outer_start < outer_bound; outer_start++)
 	{
-		for(inner_start = 0; inner_start < inner_bound; inner_start++)
+		for (inner_start = 0; inner_start < inner_bound; inner_start++)
 		{
 			if (inner_start > 9)
 			{

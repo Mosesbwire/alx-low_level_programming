@@ -20,11 +20,11 @@ void print_chessboard(char (*a)[8])
 		{
 			c = a[i][j];
 
-			putchar(c);
+			_putchar(c);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 }

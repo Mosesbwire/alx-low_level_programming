@@ -47,7 +47,7 @@ int is_palindrome(char *s)
 {
 	int x = _strlen(s);
 
-	if (x == 1 && *s == ' ')
+	if (*s == ' ')
 	{
 		return (1);
 	}

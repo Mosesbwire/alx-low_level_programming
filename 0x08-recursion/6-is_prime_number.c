@@ -1,9 +1,8 @@
 /**
-  * is_prime_number - checks for a prime number
-  * @n: integer to check if its prime number
-  * Return: 1 if prime number or 0 if not prime number
+  * check_prime - helper function recursively checks if number is prime
+  * @n: integer to check if is prime number
   * @x: divisor for @n
-  *
+  * Return: 1 if n is prime. Otherwise 0
   */
 
 int check_prime(int n, int x)
@@ -30,6 +29,12 @@ int check_prime(int n, int x)
 
 	return (check_prime(n, x + 1));
 }
+
+/**
+  * is_prime_number - checks if number is prime
+  * @n: integer to check if is prime
+  * Return: 1 if n is prime, otherwise return 0
+  */
 
 
 int is_prime_number(int n)

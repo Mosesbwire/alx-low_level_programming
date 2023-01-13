@@ -25,7 +25,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	for (x = 0; x < nmemb; x++)
+	for (x = 0; x < (nmemb * size); x++)
 	{
 		temp_ptr[x] = 0;
 	}

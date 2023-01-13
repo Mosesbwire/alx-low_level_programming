@@ -9,31 +9,27 @@
 
 int *array_range(int min, int max)
 {
-	int x, y;
+	int x, z;
 	int *ptr;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
-
-	ptr = malloc(sizeof(int) * (max - min) + 1);
+	z = max - min + 1;
+	ptr = malloc(sizeof(int) * z);
 
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	x = max - min;
-	y = 0;
-
-	while (y <= x)
+	
+	for (x = 0; x < z; x++, min++)
 	{
-		ptr[y] = min;
-
-		y++;
-		min++;
+		ptr[x] = min;
 	}
 
+	
 	return (ptr);
 }

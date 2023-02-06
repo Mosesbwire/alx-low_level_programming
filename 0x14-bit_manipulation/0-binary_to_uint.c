@@ -3,6 +3,7 @@
 #include <stddef.h>
 #include <string.h>
 #include <stdio.h>
+#include "main.h"
 /**
   * _pow_base2 - calculate power of x
   * @x: power value

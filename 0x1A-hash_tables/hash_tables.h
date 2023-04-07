@@ -10,7 +10,8 @@
  * @next: A pointer to the next node of the list
  */
 
-typedef struct hash_node_s {
+typedef struct hash_node_s
+{
     char *key;
     char *value;
     struct hash_node_s *next;
@@ -26,8 +27,8 @@ typedef struct hash_node_s {
  */
 typedef struct hash_table_s
 {
-     unsigned long int size;
-     hash_node_t **array;
+    unsigned long int size;
+    hash_node_t **array;
 } hash_table_t;
 
 #define KEY_INDEX_ERROR -1
@@ -36,5 +37,6 @@ hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
 int is_valid_key(const unsigned char *key);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
-
+int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+void print_hash_table(hash_table_t *ht);
 #endif

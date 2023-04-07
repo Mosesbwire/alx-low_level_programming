@@ -31,7 +31,7 @@ int is_valid_key(const unsigned char *key)
 	return (0);
 }
 /**
- * key-index - takes @key through hashing to generate index
+ * key_index - takes @key through hashing to generate index
  * @key: the key
  * @size: size of the array
  * Return: index or KEY_INDEX_ERROR on error
@@ -41,7 +41,7 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
 	unsigned long int index;
 	unsigned long int hash_value;
-	
+
 	hash_value = hash_djb2(key);
 	index = hash_value % size;
 

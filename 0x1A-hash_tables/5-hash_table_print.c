@@ -7,7 +7,7 @@
  * @ht: hash table to print
  */
 
-void hash_table_print(hash_table_t *ht)
+void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
 	hash_node_t *tmp;
@@ -21,7 +21,7 @@ void hash_table_print(hash_table_t *ht)
 			tmp = ht->array[i];
 			while (tmp != NULL)
 			{
-				printf("\'%s\': \'%s\'". tmp->key, tmp->value);
+				printf("\'%s\': \'%s\'", tmp->key, tmp->value);
 				tmp = tmp->next;
 				if (tmp != NULL)
 				{
